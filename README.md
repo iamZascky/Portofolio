@@ -1,4 +1,4 @@
-# Antigravity Portfolio
+# Portfolio
 
 A professional, interactive portfolio website built with Next.js, Framer Motion, and Tailwind CSS. The design showcases both systems programming expertise and creative video editing skills, featuring a high-performance, dark-themed "hacker" aesthetic with smooth parallax scroll animations.
 
