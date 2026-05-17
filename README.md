@@ -62,5 +62,3 @@ Here is a live screenshot preview of the portfolio's Hero section:
 - Added step-by-step local running guide and embedded a live preview screenshot in `README.md`.
 - Stored live preview screenshot under `public/screenshot.png`.
 
-> **AI INSTRUCTION**: Every time a change is made to the codebase, this `README.md` (specifically the Architecture & Components and Changelog sections) must be updated to reflect the latest state.
-
