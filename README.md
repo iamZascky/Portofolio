@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Antigravity Portfolio
 
-## Getting Started
+A professional, interactive portfolio website built with Next.js, Framer Motion, and Tailwind CSS. The design showcases both systems programming expertise and creative video editing skills, featuring a high-performance, dark-themed "hacker" aesthetic with smooth parallax scroll animations.
 
-First, run the development server:
+## Tech Stack
+- **Framework**: Next.js 16 (React 19)
+- **Styling**: Tailwind CSS 4
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Language**: TypeScript
+
+## Architecture & Components
+The site is built as a single-page scrolling experience (`src/app/page.tsx`) utilizing several interactive components:
+
+- **`FloatingNav.tsx`**: Sticky navigation bar.
+- **`Navbar.tsx`**: Main header navigation.
+- **`Hero.tsx`**: Landing section with initial parallax introduction.
+- **`Deployments.tsx`**: Section showcasing deployments and live systems.
+- **`Integrity.tsx`**: Systems programming section featuring a floating, parallax-enabled layout.
+- **`ProjectPreview.tsx`**: Showcase of projects and work.
+- **`History.tsx`**: Work experience and background.
+- **`Contact.tsx`**: Interactive terminal-style contact interface.
+- **`Footer.tsx`**: Page footer.
+
+### Animation System
+The site uses a unified parallax scrolling system.
+- **`ParallaxWrapper.tsx`**: A wrapper component that applies opacity mapping and scroll-based distance mapping to elements, ensuring smooth GPU-accelerated motion and maintaining a cohesive visual flow.
+
+## Local Development
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Note: On Windows, you might need to bypass PowerShell execution policies:
+cmd.exe /c npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Changelog
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+**[2026-05-17]**
+- Initialized the `README.md` with comprehensive project documentation.
+- Created core documentation structure to be maintained continuously.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+> **AI INSTRUCTION**: Every time a change is made to the codebase, this `README.md` (specifically the Architecture & Components and Changelog sections) must be updated to reflect the latest state.
