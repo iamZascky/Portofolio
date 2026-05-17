@@ -28,16 +28,39 @@ The site uses a unified parallax scrolling system.
 
 ## Local Development
 
-```bash
-npm run dev
-# Note: On Windows, you might need to bypass PowerShell execution policies:
-cmd.exe /c npm run dev
-```
+Follow these steps to run the portfolio website locally:
+
+1. **Install Dependencies**:
+   Ensure you have Node.js installed, then install the package dependencies:
+   ```bash
+   npm install
+   ```
+
+2. **Run Development Server**:
+   Start the Next.js development server:
+   ```bash
+   npm run dev
+   ```
+   *Note for Windows users:* If you hit a `PSSecurityException` script execution policy restriction in PowerShell, run this command instead:
+   ```powershell
+   cmd.exe /c npm run dev
+   ```
+
+3. **Verify Locally**:
+   Open [http://localhost:3000](http://localhost:3000) in your web browser.
+
+### Application Preview
+Here is a live screenshot preview of the portfolio's Hero section:
+
+![Portfolio Live Hero Preview](./public/screenshot.png)
 
 ## Changelog
 
 **[2026-05-17]**
 - Initialized the `README.md` with comprehensive project documentation.
 - Created core documentation structure to be maintained continuously.
+- Added step-by-step local running guide and embedded a live preview screenshot in `README.md`.
+- Stored live preview screenshot under `public/screenshot.png`.
 
 > **AI INSTRUCTION**: Every time a change is made to the codebase, this `README.md` (specifically the Architecture & Components and Changelog sections) must be updated to reflect the latest state.
+
