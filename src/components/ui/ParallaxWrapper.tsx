@@ -5,7 +5,6 @@ import React, { useEffect, useState, useRef } from "react";
 export default function ParallaxWrapper({ 
   children, 
   className = "",
-  speed = 40 // Retained for prop compatibility across all sections
 }: { 
   children: React.ReactNode; 
   className?: string;

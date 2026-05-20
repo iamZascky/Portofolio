@@ -1,8 +1,7 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { motion } from "framer-motion";
-import { Activity, ShieldCheck } from "lucide-react";
 
 export default function Navbar() {
   return (

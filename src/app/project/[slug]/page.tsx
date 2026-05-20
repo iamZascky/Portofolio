@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { ArrowLeft, Terminal, Cpu, Box, Layout, Shield } from "lucide-react";
+import { ArrowLeft, Terminal, Cpu, Layout, Shield } from "lucide-react";
 import { projects } from "@/data/projects";
 import { notFound } from "next/navigation";
 
@@ -36,7 +36,7 @@ export default async function ProjectDetail({ params }: { params: Promise<{ slug
           <div className="flex items-center gap-3 mb-6">
             <div className="w-1.5 h-1.5 rounded-full bg-[#00f0ff] animate-pulse"></div>
             <span className="font-mono text-xs tracking-widest text-[#00f0ff]">
-              {project.category} // ASSET_LOADED
+              {project.category} {"// ASSET_LOADED"}
             </span>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white uppercase mb-6 drop-shadow-[0_0_15px_rgba(0,240,255,0.1)]">

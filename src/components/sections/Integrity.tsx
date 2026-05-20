@@ -1,25 +1,9 @@
 "use client";
 
 import React from "react";
-import { Layers, Database, Container, Server, Shield, Cpu, Code2, Video } from "lucide-react";
-import ParallaxWrapper from "./ParallaxWrapper";
-
-const metrics = [
-  { label: "FRONTEND_ARCHITECTURE", percentage: 99, icon: Layers, desc: "Fluid animations, responsive layouts, and modern glassmorphism UI." },
-  { label: "BACKEND_PIPELINES", percentage: 95, icon: Server, desc: "High-throughput data layers and secure API endpoints." },
-  { label: "VIDEO_PRODUCTION", percentage: 95, icon: Video, desc: "Cinematic timeline editing, color grading, and VFX." },
-  { label: "UI/UX_FIDELITY", percentage: 92, icon: Shield, desc: "Pixel-perfect implementation of design tokens and typography." },
-];
-
-const technologies = [
-  { name: "React/JS", icon: Code2, color: "text-[#00f0ff]" },
-  { name: "Premiere Pro", icon: Video, color: "text-purple-400" },
-  { name: "After Effects", icon: Video, color: "text-purple-500" },
-  { name: "PostgreSQL", icon: Database, color: "text-indigo-400" },
-  { name: "Docker", icon: Container, color: "text-cyan-400" },
-  { name: "Go", icon: Server, color: "text-cyan-300" },
-  { name: "Next.js", icon: Cpu, color: "text-white" },
-];
+import { Layers } from "lucide-react";
+import ParallaxWrapper from "@/components/ui/ParallaxWrapper";
+import { SKILL_METRICS, TECHNOLOGIES } from "@/constants/portfolio";
 
 export default function Integrity() {
   return (
@@ -41,7 +25,7 @@ export default function Integrity() {
         <div className="lg:col-span-6">
           <ParallaxWrapper speed={40}>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {metrics.map((item) => {
+              {SKILL_METRICS.map((item) => {
                 const IconComp = item.icon || Layers;
                 return (
                   <div 
@@ -66,7 +50,7 @@ export default function Integrity() {
         <div className="lg:col-span-6">
           <ParallaxWrapper speed={-40}>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-              {technologies.map((tech) => {
+              {TECHNOLOGIES.map((tech) => {
                 const IconComp = tech.icon;
                 return (
                   <div

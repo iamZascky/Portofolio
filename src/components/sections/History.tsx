@@ -1,24 +1,8 @@
 "use client";
 
 import React from "react";
-import ParallaxWrapper from "./ParallaxWrapper";
-
-const timeline = [
-  {
-    period: "2024 - PRESENT",
-    role: "LEAD_SOFTWARE_ENGINEER",
-    company: "GlobalTech Solutions",
-    description: "Spearheading frontend/backend architectures, optimizing distributed microservices, and leading high-performing cross-functional dev teams.",
-    align: "right",
-  },
-  {
-    period: "2021 - 2024",
-    role: "FULL-STACK_DEV_&_VIDEO_EDITOR",
-    company: "CreativeLabs Digital",
-    description: "Engineered robust responsive user interfaces using React/Next.js and produced high-quality video content featuring advanced motion graphics.",
-    align: "left",
-  },
-];
+import ParallaxWrapper from "@/components/ui/ParallaxWrapper";
+import { TIMELINE_DATA } from "@/constants/portfolio";
 
 export default function History() {
   return (
@@ -34,7 +18,7 @@ export default function History() {
           <div className="absolute left-1/2 -translate-x-1/2 top-2 bottom-2 w-px bg-gradient-to-b from-[#00f0ff] via-white/10 to-transparent hidden md:block"></div>
 
           <div className="flex flex-col gap-12 relative z-10">
-            {timeline.map((item) => {
+            {TIMELINE_DATA.map((item) => {
               const isRight = item.align === "right";
 
               return (

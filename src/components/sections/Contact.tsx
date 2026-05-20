@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { Send, CheckCircle2 } from "lucide-react";
-import ParallaxWrapper from "./ParallaxWrapper";
+import ParallaxWrapper from "@/components/ui/ParallaxWrapper";
 
 export default function Contact() {
   const [formSubmitted, setFormSubmitted] = useState(false);

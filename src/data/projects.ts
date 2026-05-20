@@ -1,14 +1,4 @@
-export interface Project {
-  slug: string;
-  category: string;
-  title: string;
-  description: string;
-  tags: string[];
-  hasSvg?: boolean;
-  svgType?: string;
-  longDescription: string;
-  features: string[];
-}
+import { Project } from "@/types";
 
 export const projects: Project[] = [
   {

@@ -1,10 +1,11 @@
 "use client";
 
-import React, { useRef } from "react";
+import React from "react";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
-import { projects, Project } from "@/data/projects";
-import ParallaxWrapper from "./ParallaxWrapper";
+import { projects } from "@/data/projects";
+import { Project } from "@/types";
+import ParallaxWrapper from "@/components/ui/ParallaxWrapper";
 
 const ProjectCard = ({ proj }: { proj: Project }) => {
   return (

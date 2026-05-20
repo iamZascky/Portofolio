@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Cpu, Terminal, ArrowUpRight } from "lucide-react";
+import { Terminal, ArrowUpRight } from "lucide-react";
 
 export default function Hero() {
   const { scrollY } = useScroll();

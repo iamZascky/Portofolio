@@ -2,9 +2,9 @@
 
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronLeft, ChevronRight, ExternalLink, Layers, Monitor, Cpu } from "lucide-react";
+import { ChevronLeft, ChevronRight, ExternalLink, Monitor } from "lucide-react";
 import Link from "next/link";
-import ParallaxWrapper from "./ParallaxWrapper";
+import ParallaxWrapper from "@/components/ui/ParallaxWrapper";
 
 import { projects } from "@/data/projects";
 

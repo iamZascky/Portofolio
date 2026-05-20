@@ -1,15 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-
-const sections = [
-  { id: "hero", title: "Top" },
-  { id: "deployments", title: "Projects" },
-  { id: "integrity", title: "Stats" },
-  { id: "preview", title: "Preview" },
-  { id: "history", title: "History" },
-  { id: "transmit", title: "Contact" },
-];
+import { NAVIGATION_SECTIONS } from "@/constants/portfolio";
 
 export default function FloatingNav() {
   const [activeSection, setActiveSection] = useState("hero");
@@ -20,7 +12,7 @@ export default function FloatingNav() {
       const scrollPosition = window.scrollY + window.innerHeight / 3;
 
       let current = "hero";
-      for (const section of sections) {
+      for (const section of NAVIGATION_SECTIONS) {
         const el = document.getElementById(section.id);
         if (el) {
           if (el.offsetTop <= scrollPosition && el.offsetTop + el.offsetHeight > scrollPosition) {
@@ -39,7 +31,7 @@ export default function FloatingNav() {
 
   return (
     <div className="hidden xl:flex fixed left-4 top-1/2 -translate-y-1/2 flex-col gap-6 items-center z-40 opacity-40 hover:opacity-100 transition-opacity">
-      {sections.map((section) => (
+      {NAVIGATION_SECTIONS.map((section) => (
         <a
           key={section.id}
           href={`#${section.id}`}
@@ -55,3 +47,4 @@ export default function FloatingNav() {
     </div>
   );
 }
+

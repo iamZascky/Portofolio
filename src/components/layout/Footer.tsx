@@ -11,7 +11,7 @@ export default function Footer() {
 
         {/* Middle */}
         <div>
-          // SYS_NODE: SEC_2026. ALL SYSTEMS OPERATIONAL.
+          {"// SYS_NODE: SEC_2026. ALL SYSTEMS OPERATIONAL."}
         </div>
 
         {/* Right Links */}

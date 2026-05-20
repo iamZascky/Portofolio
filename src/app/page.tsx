@@ -1,15 +1,14 @@
 "use client";
 import React, { useEffect } from "react";
-import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
-import Deployments from "@/components/Deployments";
-import Integrity from "@/components/Integrity";
-import ProjectPreview from "@/components/ProjectPreview";
-import History from "@/components/History";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
-
-import FloatingNav from "@/components/FloatingNav";
+import Navbar from "@/components/layout/Navbar";
+import FloatingNav from "@/components/layout/FloatingNav";
+import Footer from "@/components/layout/Footer";
+import Hero from "@/components/sections/Hero";
+import Deployments from "@/components/sections/Deployments";
+import Integrity from "@/components/sections/Integrity";
+import ProjectPreview from "@/components/sections/ProjectPreview";
+import History from "@/components/sections/History";
+import Contact from "@/components/sections/Contact";
 
 export default function Home() {
   // Force page to start at the top on every reload
